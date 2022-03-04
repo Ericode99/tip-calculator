@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Tip Calculator</title>
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+  </head>
+
+  <body>
+    <main class="app">
+      <div class="container">
+        <div class="calculator">
+          <div class="title">
+            <h1 class="primary-heading">International Tip Calculator</h1>
+          </div>
+          <div class="bill">
+            <span class="input-label">Bill</span>
+            <input class="bill-input" />
+            <span class="currency">$</span>
+          </div>
+          <div class="country">
+            <span class="input-label">Country</span>
+            <select class="country-selector">
+              <option value="">Please choose a country or region:</option>
+              <option value="">Australia</option>
+              <option value="">Canada</option>
+              <option value="">China</option>
+              <option value="">European Union</option>
+              <option value="">Mexico</option>
+              <option value="">USA</option>
+              <option value="">South America</option>
+              <option value="">South Africa</option>
+              <option value="">Switzerland</option>
+              <option value="">Rest of the world</option>
+            </select>
+          </div>
+          <div class="recommendation">
+            <p class="recommendation-title">Tip recommendation:</p>
+            <p class="recommendation-text">
+              In the United States tipping in a restaurant is required. The
+              usual tips are 15% for underaverage service, 20% for average
+              service and 25% for good service
+            </p>
+          </div>
+          <div class="tip-percentage-container">
+            <span class="tip-percentage">Tip</span>
+            <input class="percentage-input" />
+            <span class="percent">%</span>
+          </div>
+          <div class="tip-calculated-container">
+            <p class="tip-calculated-text active-result">
+              Tip <span class="tip">50</span> <span class="currency">$</span>
+            </p>
+          </div>
+          <div class="total-calculated-container">
+            <p class="total-calculated-text active-result">
+              Total <span class="total">500</span>
+              <span class="currency">$</span>
+            </p>
+          </div>
+          <div class="split-bill-option">
+            <input class="split-bill" type="checkbox" />
+            <span class="split-text">Split bill among</span>
+            <input class="people-input" />
+          </div>
+          <div class="tip-per-person-container">
+            <p class="tip-per-person-text">
+              Tip per person <span class="tip-per-person">-</span
+              ><span class="currency">$</span>
+            </p>
+          </div>
+          <div class="total-per-person-container">
+            <p class="total-per-person-text">
+              Total per person <span class="total-per-person">-</span
+              ><span class="currency">$</span>
+            </p>
+          </div>
+        </div>
+        <div class="btn-container">
+          <button class="btn">Calculate</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

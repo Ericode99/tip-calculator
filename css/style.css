@@ -1,0 +1,90 @@
+.container {
+  display: grid;
+  justify-content: center;
+  height: 100vh;
+  align-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../img/background.jpg);
+  background-size: cover;
+}
+
+.calculator {
+  background-color: #e7f5ff;
+  /* border: 1px solid #333; */
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.7);
+  border-radius: 11px;
+}
+
+.primary-heading {
+  font-size: 4.4rem;
+  margin: 1.6rem 1.6rem 4.8rem 1.6rem;
+}
+
+.bill,
+.country,
+.recommendation,
+.tip-percentage-container,
+.tip-calculated-container,
+.total-calculated-container,
+.split-bill-option,
+.tip-per-person-container,
+.total-per-person-container {
+  margin: 0 1.6rem 2.4rem 1.6rem;
+}
+
+.container input,
+.container select {
+  font-size: 1.8rem;
+  margin: 0 0.8rem;
+  font-family: inherit;
+  color: inherit;
+  /* border: none; */
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.container input {
+  max-width: 5rem;
+  text-align: right;
+  padding-right: 0.2rem;
+}
+
+.recommendation-title {
+  margin-bottom: 0.8rem;
+}
+
+.recommendation-text {
+  width: 40rem;
+  padding: 1.2rem;
+  line-height: 1.2;
+  /* border: 1px solid #333; */
+  border-radius: 9px;
+  background-color: #d0ebff;
+  box-shadow: 0 0.8rem 1.2rem rgba(0, 0, 0, 0.075);
+}
+
+.active-result {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 2rem;
+  border-bottom: 5px double #333;
+}
+
+.btn {
+  margin-top: 1.6rem;
+  background-color: #74c0fc;
+  font-size: 2.4rem;
+  font-weight: 500;
+  padding: 0.4rem 3.2rem;
+  border-radius: 9rem;
+  border-style: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.6);
+}
+
+.btn:active {
+  box-shadow: none;
+}
