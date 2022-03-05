@@ -12,11 +12,13 @@
       rel="stylesheet"
     />
 
-    <title>Tip Calculator</title>
-
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/queries.css" />
+
+    <script type="module" src="js/script.js"></script>
+
+    <title>Tip Calculator</title>
   </head>
 
   <body>
@@ -26,25 +28,21 @@
           <div class="title">
             <h1 class="primary-heading">International Tip Calculator</h1>
           </div>
-          <div class="bill">
-            <span class="input-label">Bill</span>
-            <input class="bill-input" type="number" required />
-            <span class="currency">$</span>
-          </div>
           <div class="country">
             <span class="input-label">Country</span>
             <select class="country-selector">
-              <option value="">Please choose a country or region:</option>
-              <option value="">Australia</option>
-              <option value="">Canada</option>
-              <option value="">China</option>
-              <option value="">European Union</option>
-              <option value="">Mexico</option>
-              <option value="">USA</option>
-              <option value="">South America</option>
-              <option value="">South Africa</option>
-              <option value="">Switzerland</option>
-              <option value="">Rest of the world</option>
+              <option value="notSet">Please choose a country or region:</option>
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="china">China</option>
+              <option value="england">England</option>
+              <option value="eu">European Union</option>
+              <option value="mexico">Mexico</option>
+              <option value="usa">USA</option>
+              <option value="southamerica">South America</option>
+              <option value="southafrica">South Africa</option>
+              <option value="switzerland">Switzerland</option>
+              <option value="rest">Rest of the world</option>
             </select>
           </div>
           <div class="recommendation">
@@ -55,17 +53,22 @@
               service and 25% for good service
             </p>
           </div>
+          <div class="bill">
+            <span class="input-label">Bill</span>
+            <input class="bill-input" type="number" required />
+            <span class="currency">$</span>
+          </div>
           <div class="tip-percentage-container">
             <span class="tip-percentage">Tip</span>
             <input class="percentage-input" type="number" />
             <span class="percent">%</span>
           </div>
-          <div class="tip-calculated-container">
-            <p class="tip-calculated-text active-result">
+          <div class="tip-calculated-container hidden">
+            <p class="tip-calculated-text active-result active-tip">
               Tip: <span class="tip">50</span> <span class="currency">$</span>
             </p>
           </div>
-          <div class="total-calculated-container">
+          <div class="total-calculated-container hidden">
             <p class="total-calculated-text active-result">
               Total: <span class="total">500</span>
               <span class="currency">$</span>
@@ -77,15 +80,15 @@
             <input class="people-input" type="number" />
           </div>
           <div class="tip-per-person-container hidden">
-            <p class="tip-per-person-text">
-              Tip per person <span class="tip-per-person">-</span
-              ><span class="currency">$</span>
+            <p class="tip-per-person-text active-tip">
+              Tip per person <span class="tip-per-person">-</span>
+              <span class="currency">$</span>
             </p>
           </div>
           <div class="total-per-person-container hidden">
             <p class="total-per-person-text">
-              Total per person <span class="total-per-person">-</span
-              ><span class="currency">$</span>
+              Total per person <span class="total-per-person">-</span>
+              <span class="currency">$</span>
             </p>
           </div>
         </div>
