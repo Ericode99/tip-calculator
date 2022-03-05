@@ -28,7 +28,7 @@
           </div>
           <div class="bill">
             <span class="input-label">Bill</span>
-            <input class="bill-input" />
+            <input class="bill-input" type="number" required />
             <span class="currency">$</span>
           </div>
           <div class="country">
@@ -57,32 +57,32 @@
           </div>
           <div class="tip-percentage-container">
             <span class="tip-percentage">Tip</span>
-            <input class="percentage-input" />
+            <input class="percentage-input" type="number" />
             <span class="percent">%</span>
           </div>
           <div class="tip-calculated-container">
             <p class="tip-calculated-text active-result">
-              Tip <span class="tip">50</span> <span class="currency">$</span>
+              Tip: <span class="tip">50</span> <span class="currency">$</span>
             </p>
           </div>
           <div class="total-calculated-container">
             <p class="total-calculated-text active-result">
-              Total <span class="total">500</span>
+              Total: <span class="total">500</span>
               <span class="currency">$</span>
             </p>
           </div>
           <div class="split-bill-option">
             <input class="split-bill" type="checkbox" />
             <span class="split-text">Split bill among</span>
-            <input class="people-input" />
+            <input class="people-input" type="number" />
           </div>
-          <div class="tip-per-person-container">
+          <div class="tip-per-person-container hidden">
             <p class="tip-per-person-text">
               Tip per person <span class="tip-per-person">-</span
               ><span class="currency">$</span>
             </p>
           </div>
-          <div class="total-per-person-container">
+          <div class="total-per-person-container hidden">
             <p class="total-per-person-text">
               Total per person <span class="total-per-person">-</span
               ><span class="currency">$</span>
@@ -94,5 +94,13 @@
         </div>
       </div>
     </main>
+    <footer class="footer">
+      <div class="copyright-container">
+        <p class="copyright-text">
+          &copy; Copyright <span class="year">2022</span> by Eric Rudischhauser.
+          All rights reserved.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

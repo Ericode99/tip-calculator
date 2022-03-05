@@ -1,0 +1,55 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/**************************/
+/* BELOW 800px height */
+/**************************/
+
+@media (max-height: 50em) {
+  .container {
+    height: 90rem;
+  }
+
+  .copyright-container {
+    top: 88rem;
+  }
+}
+
+/**************************/
+/* BELOW 850px width */
+/**************************/
+
+@media (max-width: 53em) {
+  .primary-heading {
+    font-size: 3rem;
+  }
+}
+
+/**************************/
+/* BELOW 500px width */
+/**************************/
+
+@media (max-width: 31.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/**************************/
+/* BELOW 400px width */
+/**************************/
+
+@media (max-width: 25em) {
+  .primary-heading {
+    font-size: 2.4rem;
+  }
+
+  .country select {
+    display: block;
+    margin-top: 0.8rem;
+    margin-left: 0;
+  }
+
+  .recommendation-text {
+    max-width: 35rem;
+  }
+}
