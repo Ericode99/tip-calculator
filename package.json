@@ -1,0 +1,12 @@
+{
+  "name": "tip-calculator",
+  "source": "index.html",
+  "browserslist": "since 2015",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "parcel": "^2.3.2"
+  }
+}
